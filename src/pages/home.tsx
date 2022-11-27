@@ -1,10 +1,12 @@
 import React from 'react'
-import reactLogo from './assets/react.svg'
+import reactLogo from '../assets/react.svg'
+import NavbarTopLayout from '../layouts/navbar-top'
 
-function App() {
+function HomePage() {
 	return (
-		<div className='min-h-screen bg-gradient-to-br from-primary-darkest to-dark-bg pt-12 md:pt-16'>
-			<main className='flex flex-col items-center justify-center gap-8 px-0 pb-12 md:gap-8 md:pb-16'>
+		<div className='min-h-screen bg-gradient-to-br from-primary-darkest to-dark-bg'>
+			<NavbarTopLayout />
+			<main className='flex flex-col items-center justify-center gap-8 px-0 pb-12 pt-12 md:gap-8 md:pt-4 md:pb-16'>
 				<div className='flex flex-col items-center'>
 					<a
 						href='https://github.com/riolly/create-react-app/'
@@ -12,16 +14,18 @@ function App() {
 						rel='noreferrer'
 						className='text-[2.75rem] font-extrabold md:text-[5rem]'
 					>
-						<h1 className='flex items-center gap-4 bg-gradient-to-bl from-primary-darker to-primary-lighter bg-clip-text text-transparent'>
-							Create
-							<a href='https://reactjs.org' target='_blank' rel='noreferrer'>
-								<img
-									src={reactLogo}
-									className='w-20 animate-spin'
-									alt='React logo'
-								/>
-							</a>
-							App
+						<h1 className='flex items-center gap-0 bg-gradient-to-bl from-primary-darker to-primary-lighter bg-clip-text text-transparent md:gap-2'>
+							Create&nbsp;
+							<span>
+								<a href='https://reactjs.org' target='_blank' rel='noreferrer'>
+									<img
+										src={reactLogo}
+										className='w-20 animate-spin'
+										alt='React'
+									/>
+								</a>
+							</span>
+							&nbsp;App
 						</h1>
 					</a>
 
@@ -96,4 +100,4 @@ const TechnologyCard: React.FC<TechnologyCardProps> = ({
 	</a>
 )
 
-export default App
+export default HomePage
