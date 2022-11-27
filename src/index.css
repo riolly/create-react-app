@@ -2,8 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6,
+	button {
+		@apply font-heading;
+	}
+
+	p {
+		@apply font-body;
+	}
+}
+
 :root {
-	font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
 	font-size: 16px;
 	line-height: 24px;
 	font-weight: 400;
@@ -47,7 +62,6 @@ button {
 	padding: 0.6em 1.2em;
 	font-size: 1em;
 	font-weight: 500;
-	font-family: inherit;
 	background-color: #1a1a1a;
 	cursor: pointer;
 	transition: border-color 0.25s;
