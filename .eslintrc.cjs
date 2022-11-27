@@ -6,7 +6,7 @@ module.exports = {
   extends: ['plugin:react/recommended', 'xo', 'prettier'],
   overrides: [
     {
-      extends: ['xo-typescript'],
+      extends: ['xo-typescript', 'prettier'],
       files: ['*.ts', '*.tsx'],
     },
   ],
