@@ -1,6 +1,6 @@
 import React from 'react'
-import reactLogo from '../assets/react.svg'
-import NavbarTopLayout from '../layouts/navbar-top'
+import NavbarTopLayout from 'layouts/navbar-top'
+import reactLogo from 'assets/react.svg'
 
 function HomePage() {
 	return (

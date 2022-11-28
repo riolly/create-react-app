@@ -1,5 +1,5 @@
 import * as React from 'react'
-import NavbarTopLayout from '../layouts/navbar-top'
+import NavbarTopLayout from 'layouts/navbar-top'
 
 function ExamplePage() {
 	return (

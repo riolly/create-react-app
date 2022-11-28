@@ -1,7 +1,7 @@
 import {createRouteConfig, createReactRouter} from '@tanstack/react-router'
 
-import HomePage from './pages/home'
-import ExamplePage from './pages/example'
+import HomePage from 'pages/home'
+import ExamplePage from 'pages/example'
 
 const rootRoute = createRouteConfig()
 
